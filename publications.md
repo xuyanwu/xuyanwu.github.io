@@ -14,7 +14,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
        <p class="media-heading">
           <strong>Twin Auxiliary Classifiers GAN
 </strong><br />
-          Mingming Gong^*, <b>Yanwu Xu^*</b>, Chunyuan Li, Kun Zhang, Kayhan Batmanghelich<br />
+          Mingming Gong*, <b>Yanwu Xu*</b>, Chunyuan Li, Kun Zhang, Kayhan Batmanghelich<br />
           NeuraIPS 2019<br />
           <a href="https://arxiv.org/abs/1907.02690">[PDF]</a> <br />
        </p>
@@ -33,7 +33,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
     <div class="media-body">
        <p class="media-heading">
           <strong>Generative-Discriminative Complementary Learning</strong><br />
-          <b>Yanwu Xu</b>, Mingming Gong, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
+          <b>Yanwu Xu*</b>, Mingming Gong*, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
           <a href="https://arxiv.org/abs/1904.01612">[PDF]</a> <br />
        </p>
     </div>
