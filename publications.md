@@ -1,7 +1,4 @@
----
-layout: page
-title: Publications
----
+
 
 You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4wXw2j5KrSo5Bno4gz__drZ4lKvw4hGnOcCwZtcSR9ihh1vqOSavrTRL41MZK3Yy58M1Myjdb2VI617xe3PJlyOM6iNA1" target="_blank">Google Scholar profile</a>.
 <br />
