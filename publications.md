@@ -41,7 +41,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
        <p class="media-heading">
           <strong>Compressed Self-Attention for Deep Metric Learning</strong><br />
            AAAI2020 <br />
-          <b>Yanwu Xu*</b>, Ziye Chen, Mingming Gong, Yanwu Xu, Chaohui Wang, Kun Zhang, Bo Du<br />
+           Ziye Chen, Mingming Gong, <b>Yanwu Xu</b>, Chaohui Wang, Kun Zhang, Bo Du<br />
        </p>
     </div>
 </div>
