@@ -13,7 +13,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
 </strong><br />
           Mingming Gong*, <b>Yanwu Xu*</b>, Chunyuan Li, Kun Zhang, Kayhan Batmanghelich<br />
           NeuraIPS 2019<br />
-          <a href="https://arxiv.org/abs/1907.02690">[PDF]</a> <br />
+          <a href="https://papers.nips.cc/paper/8414-twin-auxilary-classifiers-gan">[PDF]</a> <a href="https://github.com/batmanlab/twin-auxiliary-classifiers-gan">[CODE]</a><br />
        </p>
     </div>
 </div>
