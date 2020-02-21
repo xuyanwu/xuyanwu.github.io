@@ -31,7 +31,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
        <p class="media-heading">
           <strong>Generative-Discriminative Complementary Learning</strong><br />
            AAAI2020 <br />
-          <b>Yanwu Xu*</b>, Mingming Gong*, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
+          <b>Yanwu Xu</b>, Mingming Gong, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
           <a href="https://arxiv.org/abs/1904.01612">[PDF]</a> <br />
        </p>
     </div>
