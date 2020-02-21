@@ -33,8 +33,18 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
     <div class="media-body">
        <p class="media-heading">
           <strong>Generative-Discriminative Complementary Learning</strong><br />
+           AAAI2020 <br />
           <b>Yanwu Xu*</b>, Mingming Gong*, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
           <a href="https://arxiv.org/abs/1904.01612">[PDF]</a> <br />
+       </p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
+          <strong>Compressed Self-Attention for Deep Metric Learning</strong><br />
+           AAAI2020 <br />
+          <b>Yanwu Xu*</b>, Ziye Chen, Mingming Gong, Yanwu Xu, Chaohui Wang, Kun Zhang, Bo Du<br />
        </p>
     </div>
 </div>
