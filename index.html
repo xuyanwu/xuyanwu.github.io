@@ -13,33 +13,32 @@ use-site-title: true
   Before that, I obtained B.S. degree in Electrical Mechanical Engineering department at Central South University in 2017.</p>
 
 
-<!-- <h3>Professional Acitivities</h3>
-<ul>
-  <li><p>Journal Reviewer: TPAMI, IJCV, TNNLS, TCSVT</p></li>
-  <li><p>Conference Reviewer: UAI2019, CVPR 2019, ECCV 2018</p></li>
-</ul> -->
-
 <h3>Blog</h3>
 <ul>
-  <li><p>Congrats to our Conditional GAN paper accepted by NeuralIPS 2019 (Spotlight 2.4%)!. In this work, Dr. Mingming Gong and me have the equal
-    contribution to this work which solve a critical problem in AC-GAN. below is the general idea of our work. <br/>
+  <li><p>Congrats to our Image2Image translation model accpeted by CVPR2022. In this work, we proposed an adversarial spatial perturbation consistency
+    for I2I task. More detials, please refer to our <a href="https://github.com/batmanlab/MSPC">git repo</a>. <br/>
     
-    Conditional generative models enjoy remarkable progress over the past few years. One of the popular conditional models is
-    Auxiliary Classifier GAN (AC-GAN), which generates highly discriminative images by extending the loss function of GAN with
-    an auxiliary classifier. However, the diversity of the generated samples by AC-GAN tends to decrease as the number of 
-    classes increases, hence limiting its power on large-scale data. In this paper, we identify the source of the low diversity 
-    issue theoretically and propose a practical solution to solve the problem. We show that the auxiliary classifier in AC-GAN 
-    imposes perfect separability, which is disadvantageous when the supports of the class distributions have significant 
-    overlap. To address the issue, we propose Twin Auxiliary Classifiers Generative Adversarial Net (TAC-GAN) that further 
-    benefits from a new player that interacts with other players (the generator and the discriminator) in GAN. Theoretically, 
-    we demonstrate that TAC-GAN can effectively minimize the divergence between the generated and real-data distributions. 
-    Extensive experimental results show that our TAC-GAN can successfully replicate the true data distributions on simulated 
-    data, and significantly improves the diversity of class-conditional image generation on real datasets.
+    Unpaired image-to-image translation (I2I) is an ill- posed problem, as an infinite number of translation func- tions can map the source domain 
+    distribution to the tar- get distribution. Therefore, much effort has been put into designing suitable constraints, e.g., cycle consistency 
+    (Cy- cleGAN), geometry consistency (GCGAN), and contrastive learning-based constraints (CUTGAN), that help better pose the problem. However, 
+    these well-known constraints have limitations: (1) they are either too restrictive or too weak for specific I2I tasks; (2) these methods result 
+    in con- tent distortion when there is a significant spatial variation between the source and target domains. This paper pro- poses a universal 
+    regularization technique called maximum spatial perturbation consistency (MSPC), which enforces a spatial perturbation function (T ) and the 
+    translation oper- ator (G) to be commutative (i.e., T ◦ G = G ◦ T ). In ad- dition, we introduce two adversarial training components for learning 
+    the spatial perturbation function. The first one lets T compete with G to achieve maximum perturbation. The second one lets G and T compete with 
+    discriminators to align the spatial variations caused by the change of ob- ject size, object distortion, background interruptions, etc. Our 
+    method outperforms the state-of-the-art methods on most I2I benchmarks. We also introduce a new benchmark, namely the front face to profile 
+    face dataset, to emphasize the underlying challenges of I2I for real-world applications. We finally perform ablation experiments to study the 
+    sensi- tivity of our method to the severity of spatial perturbation and its effectiveness for distribution alignment.
 </ul>
 
 
 <h3>News</h3>
 <ul>
+  <li><p>One papers is accepted by <b>CVPR 2022</b>.</p></li>
+  <li><p>One papers is accepted by <b>ACM 2021</b>.</p></li>
+  <li><p>One papers is accepted by <b>ICCV 2021</b>.</p></li>
+  <li><p>Two papers are accepted by <b>AAAI 2020</b>.</p></li>
   <li><p>One paper is accepted by <b>NeurIPS 2019</b>.</p></li>
   <li><p>One paper is accepted by <b>BraTS Challenge 2018</b>.</p></li>
   <li><p>One paper is accepted by <b>ACCV 2018</b>.</p></li>
