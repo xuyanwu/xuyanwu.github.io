@@ -30,6 +30,26 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
 <div class="media">
     <div class="media-body">
        <p class="media-heading">
+          <strong>Generative-Discriminative Complementary Learning</strong><br />
+           AAAI2020 <br />
+          <b>Yanwu Xu</b>, Mingming Gong, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
+          <a href="https://arxiv.org/abs/1904.01612">[PDF]</a> <br />
+       </p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
+          <strong>Compressed Self-Attention for Deep Metric Learning</strong><br />
+           AAAI2020 <br />
+           Ziye Chen, Mingming Gong, <b>Yanwu Xu</b>, Chaohui Wang, Kun Zhang, Bo Du<br />
+       </p>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
           <strong>Twin Auxiliary Classifiers GAN
 </strong><br />
           Mingming Gong*, <b>Yanwu Xu*</b>, Chunyuan Li, Kun Zhang, Kayhan Batmanghelich<br />
@@ -44,25 +64,6 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
           <strong>Identifying the best machine learning algorithms for brain tumor segmentation, progression assessment, and overall survival prediction in the BRATS challenge</strong><br />
           Tech report, arXiv<br />
           <a href="https://arxiv.org/pdf/1811.02629.pdf">[PDF]</a> <br />
-       </p>
-    </div>
-</div>
-<div class="media">
-    <div class="media-body">
-       <p class="media-heading">
-          <strong>Generative-Discriminative Complementary Learning</strong><br />
-           AAAI2020 <br />
-          <b>Yanwu Xu</b>, Mingming Gong, Junxiang Chen, Tongliang Liu, Kun Zhang, Kayhan Batmanghelich<br />
-          <a href="https://arxiv.org/abs/1904.01612">[PDF]</a> <br />
-       </p>
-    </div>
-</div>
-<div class="media">
-    <div class="media-body">
-       <p class="media-heading">
-          <strong>Compressed Self-Attention for Deep Metric Learning</strong><br />
-           AAAI2020 <br />
-           Ziye Chen, Mingming Gong, <b>Yanwu Xu</b>, Chaohui Wang, Kun Zhang, Bo Du<br />
        </p>
     </div>
 </div>
