@@ -6,6 +6,18 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
 <div class="media">
     <div class="media-body">
        <p class="media-heading">
+          <strong>Dsanet: Dynamic segment aggregation network for video-level representation learning
+</strong><br />
+          Wenhao Wu, Yuxiang Zhao, Yanwu Xu, Xiao Tan, Dongliang He, Zhikang Zou, Jin Ye, Yingying Li, Mingde Yao, Zichao Dong, Yifeng Shi<br />
+          ACM 2021<br />
+          <a href="https://arxiv.org/pdf/2105.12085.pdf">[PDF]</a> <a href="https://github.com/whwu95/DSANet">[CODE]</a><br />
+       </p>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
           <strong>Unaligned image-to-image translation by learning to reweight
 </strong><br />
           Shaoan Xie, Mingming Gong, Yanwu Xu, Kun Zhang<br />
