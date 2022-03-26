@@ -6,6 +6,18 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
 <div class="media">
     <div class="media-body">
        <p class="media-heading">
+          <strong>Maximum Spatial Perturbation Consistency for Unpaired Image-to-Image Translation
+</strong><br />
+          Yanwu Xu, Shaoan Xie, Wenhao Wu, Kun Zhang, Mingming Gong, Kayhan Batmanghelich<br />
+          CVPR 2022<br />
+          <a href="https://arxiv.org/abs/2203.12707">[PDF]</a> <a href="https://github.com/batmanlab/MSPC">[CODE]</a><br />
+       </p>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
           <strong>Dsanet: Dynamic segment aggregation network for video-level representation learning
 </strong><br />
           Wenhao Wu, Yuxiang Zhao, Yanwu Xu, Xiao Tan, Dongliang He, Zhikang Zou, Jin Ye, Yingying Li, Mingde Yao, Zichao Dong, Yifeng Shi<br />
