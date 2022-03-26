@@ -3,9 +3,18 @@
 You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4wXw2j5KrSo5Bno4gz__drZ4lKvw4hGnOcCwZtcSR9ihh1vqOSavrTRL41MZK3Yy58M1Myjdb2VI617xe3PJlyOM6iNA1" target="_blank">Google Scholar profile</a>.
 <br />
 
-<h3>
-    <a name='2019'></a> 2019
-</h3>
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
+          <strong>Unaligned image-to-image translation by learning to reweight
+</strong><br />
+          Shaoan Xie, Mingming Gong, Yanwu Xu, Kun Zhang<br />
+          ICCV 2021<br />
+          <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Xie_Unaligned_Image-to-Image_Translation_by_Learning_to_Reweight_ICCV_2021_paper.pdf">[PDF]</a> <a href="https://github.com/Mid-Push/IrwGAN">[CODE]</a><br />
+       </p>
+    </div>
+</div>
+
 <div class="media">
     <div class="media-body">
        <p class="media-heading">
