@@ -1,6 +1,6 @@
 
 
-You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4wXw2j5KrSo5Bno4gz__drZ4lKvw4hGnOcCwZtcSR9ihh1vqOSavrTRL41MZK3Yy58M1Myjdb2VI617xe3PJlyOM6iNA1" target="_blank">Google Scholar profile</a>.
+You can also browse my <a href="https://scholar.google.com/citations?user=NOEyacoAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
 <div class="media">
@@ -11,6 +11,18 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=en&view_
           Yanwu Xu, Shaoan Xie, Wenhao Wu, Kun Zhang, Mingming Gong, Kayhan Batmanghelich<br />
           CVPR 2022<br />
           <a href="https://arxiv.org/abs/2203.12707">[PDF]</a> <a href="https://github.com/batmanlab/MSPC">[CODE]</a><br />
+       </p>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-body">
+       <p class="media-heading">
+          <strong>Adversarial Consistency for Single Domain Generalization in Medical Image Segmentation
+</strong><br />
+          Yanwu Xu, Shaoan Xie, Maxwell Reynolds, Matthew Ragoza, Mingming Gong, Kayhan Batmanghelich<br />
+          MICCAI 2022<br />
+          <a href="https://github.com/batmanlab/Adversarial-Single-Domain-Generalization">[CODE]</a><br />
        </p>
     </div>
 </div>
