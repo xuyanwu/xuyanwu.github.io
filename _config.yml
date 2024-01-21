@@ -41,7 +41,7 @@ avatar: "/img/yanwu.jpeg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Yanwu Xu
-  email: "yanwuxu@pitt.edu"
+  email: "yanwuxu@bu.edu"
   github: xuyanwu    # eg. daattali
 
 # Select which links to show in the footer
