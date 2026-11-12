@@ -1,59 +1,43 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<header class="site-header">
+  <nav class="site-nav container" aria-label="Primary">
+    <a class="site-brand" href="{{ site.baseurl | append: '/' | replace: '//', '/' }}">
+      <span class="brand-monogram" aria-hidden="true">YX</span>
+      <span class="brand-name">{{ site.title }}</span>
+    </a>
+
+    <div class="nav-controls">
+      <button type="button"
+              id="theme-toggle"
+              class="theme-toggle"
+              aria-pressed="false"
+              aria-label="Switch color theme">
+        <svg class="theme-icon theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20.2 14.4A8.5 8.5 0 0 1 9.6 3.8a8.5 8.5 0 1 0 10.6 10.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="theme-label">Theme</span>
       </button>
-      {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
-      {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
-      {% endif %}
+
+      <button type="button"
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="primary-nav-menu"
+              aria-label="Toggle navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
-        {% if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
-                {% endfor %}
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li>
-            {% include navbarlink.html link=link %}
-          </li>
-        {% endif %}
+    <div class="nav-menu" id="primary-nav-menu">
+      <ul class="nav-list">
+        {% for link in site.navbar-links %}
+          <li>{% include navbarlink.html link=link %}</li>
         {% endfor %}
       </ul>
     </div>
-
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
-
-  </div>
-</nav>
+  </nav>
+</header>

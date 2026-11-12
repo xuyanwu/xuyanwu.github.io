@@ -4,10 +4,15 @@ title: 404 - Page not found
 permalink: /404.html
 ---
 
-<div class="text-center">
-  <h1>Whoops, this page doesn't exist.</h1>
-  <h1>Move along. (404 error)</h1>
-  <br/>
-
-  <img src="{{ site.baseurl }}/img/404-southpark.jpg" />
-</div>
+<section class="not-found">
+  <p class="page-eyebrow">Error 404</p>
+  <h1 class="page-title">Page not found</h1>
+  <p class="page-subtitle">The page you requested could not be found. Return to the homepage or browse publications.</p>
+  <div class="not-found-actions">
+    <a class="btn btn-primary" href="{{ site.baseurl | append: '/' | replace: '//', '/' }}">Back to Home</a>
+    <a class="btn btn-secondary" href="{{ site.baseurl | append: '/publications/' | replace: '//', '/' }}">Browse Publications</a>
+  </div>
+  <figure class="not-found-figure">
+    <img src="{{ site.baseurl }}/img/404-southpark.jpg" alt="Humorous 404 illustration" width="480" height="360" loading="lazy" />
+  </figure>
+</section>

@@ -1,16 +1,40 @@
-{% capture before %}{{ include.link[1] | split: "://" | first }}{% endcapture %}
-{% capture after %}{{ include.link[1] | split: "://" | last }}{% endcapture %}            
-{% assign internal = true %}
-{% if before != after %}
-  {% if before == "http" or before == "https" %}
-    {% assign internal = false %}
-  {% endif %}  
+{% assign raw_href = include.link[1] %}
+{% assign external = false %}
+{% if raw_href contains "://" %}
+  {% assign external = true %}
 {% endif %}
 
-{% if internal %}
-  {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
+{% if external %}
+  {% assign linkurl = raw_href %}
+{% elsif raw_href == "" or raw_href == "/" %}
+  {% assign linkurl = site.baseurl | append: "/" | replace: "//", "/" %}
+{% elsif raw_href contains "#" %}
+  {% assign linkurl = site.baseurl | append: "/" | append: raw_href | replace: "//", "/" %}
 {% else %}
-  {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
+  {% assign linkurl = site.baseurl | append: "/" | append: raw_href | replace: "//", "/" %}
 {% endif %}
 
-<a href="{{ linkurl }}">{{ include.link[0] }}</a>
+{% assign current_clean = page.url | remove: 'index.html' | remove: '.html' %}
+{% assign target_clean = '/' | append: raw_href | remove: 'index.html' | remove: '.html' | replace: '//', '/' %}
+{% assign is_current = false %}
+{% unless external or raw_href contains '#' %}
+  {% if raw_href == "" %}
+    {% if current_clean == "/" or current_clean == "" %}
+      {% assign is_current = true %}
+    {% endif %}
+  {% elsif current_clean contains target_clean %}
+    {% assign is_current = true %}
+  {% endif %}
+{% endunless %}
+
+<a class="nav-link{% if is_current %} is-active{% endif %}"
+   href="{{ linkurl }}"
+   {% if is_current %}aria-current="page"{% endif %}
+   {% if external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+  {{- include.link[0] | escape -}}
+  {%- if external -%}
+    <svg class="icon-external" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M6 3.5H12.5V10M12.2 3.8L4.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  {%- endif -%}
+</a>
