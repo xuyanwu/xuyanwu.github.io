@@ -40,16 +40,71 @@ custom-hero: true
     </div>
 
     <div class="hero-media">
-      <div class="portrait-frame">
-        <img class="portrait-img"
-             src="{{ site.baseurl }}/img/yanwu.jpeg"
-             alt="Portrait of Yanwu Xu outdoors by a coastal bridge"
-             width="128"
-             height="125"
+      <div class="portrait-frame portrait-frame--gear2">
+        <span class="gear-chip" aria-hidden="true">GEAR 2 &middot; FAST GEN</span>
+        <img class="portrait-img portrait-img--showcase"
+             src="{{ site.baseurl }}/img/yanwu-gear2.jpg"
+             alt="Yanwu Xu in a Gear Second pose on the Boston University seal in front of Marsh Chapel"
+             width="948"
+             height="948"
              fetchpriority="high"
              decoding="async" />
       </div>
-      <p class="portrait-caption">Bay Area, CA</p>
+      <p class="portrait-caption portrait-caption--gear2">Second Gear Generation (Fast Generation)</p>
+    </div>
+  </div>
+
+  <div class="metrics-strip" aria-label="Published speed and scale highlights">
+    <div class="metric-tile">
+      <span class="metric-value">290 ms</span>
+      <span class="metric-label">BlazeEdit on Pixel 10 (195M)</span>
+    </div>
+    <div class="metric-tile">
+      <span class="metric-value">1 Step</span>
+      <span class="metric-label">UFOGen &amp; SF-V single-forward</span>
+    </div>
+    <div class="metric-tile">
+      <span class="metric-value">1.4 s</span>
+      <span class="metric-label">SnapGen 1024&times;1024 on mobile</span>
+    </div>
+    <div class="metric-tile">
+      <span class="metric-value">&lt;5 s</span>
+      <span class="metric-label">SnapGen-V 5s mobile video</span>
+    </div>
+  </div>
+
+  <div class="gear-lab" data-gear-lab>
+    <div class="gear-lab-head">
+      <div>
+        <p class="pillar-label">Interactive Demo &middot; Denoising Gear Shift</p>
+        <h2 class="gear-lab-title">From 50-Step Diffusion to Second Gear (1-Step)</h2>
+      </div>
+      <div class="gear-controls" role="group" aria-label="Select diffusion step count">
+        <button type="button" class="filter-pill" data-gear="50" aria-pressed="false">50 Steps &middot; Baseline</button>
+        <button type="button" class="filter-pill" data-gear="4" aria-pressed="false">4 Steps &middot; Mobile</button>
+        <button type="button" class="filter-pill" data-gear="1" aria-pressed="true">1 Step &middot; Gear 2</button>
+      </div>
+    </div>
+
+    <div class="gear-lab-body">
+      <div class="gear-meter">
+        <div class="gear-meter-labels">
+          <span data-gear-name>Second Gear: Single-Forward Diffusion-GAN</span>
+          <span class="gear-badge" data-gear-speed>50&times; fewer steps</span>
+        </div>
+        <div class="gear-track" aria-hidden="true">
+          <div class="gear-fill" data-gear-fill style="--gear-pct: 100%;"></div>
+        </div>
+        <p class="gear-desc" data-gear-desc>
+          Distills iterative denoising into a single forward pass via Diffusion-GAN &amp; adversarial training (UFOGen, SF-V), enabling subsecond on-device image and video synthesis.
+        </p>
+      </div>
+
+      <div class="gear-visual" data-gear-visual="1" aria-hidden="true">
+        <div class="gear-orb gear-orb--a"></div>
+        <div class="gear-orb gear-orb--b"></div>
+        <span class="gear-visual-tag" data-gear-tag>1 NFE &middot; Instant</span>
+      </div>
     </div>
   </div>
 
@@ -82,7 +137,7 @@ custom-hero: true
   </div>
 
   <div class="work-grid">
-    <article class="work-card">
+    <article class="work-card work-card--spotlight">
       <div>
         <div class="work-card-top">
           <span class="badge badge--accent">Google DeepMind</span>
@@ -98,7 +153,7 @@ custom-hero: true
       </div>
     </article>
 
-    <article class="work-card">
+    <article class="work-card work-card--gear2">
       <div>
         <div class="work-card-top">
           <span class="badge badge--venue">CVPR 2026 EDGE</span>

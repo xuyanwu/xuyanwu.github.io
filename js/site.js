@@ -137,4 +137,57 @@
 
     applyFilter();
   }
+
+  // Interactive Denoising Gear Shift demo
+  const gearLab = document.querySelector("[data-gear-lab]");
+  if (gearLab) {
+    const gearButtons = Array.from(gearLab.querySelectorAll("[data-gear]"));
+    const nameEl = gearLab.querySelector("[data-gear-name]");
+    const speedEl = gearLab.querySelector("[data-gear-speed]");
+    const fillEl = gearLab.querySelector("[data-gear-fill]");
+    const descEl = gearLab.querySelector("[data-gear-desc]");
+    const visualEl = gearLab.querySelector("[data-gear-visual]");
+    const tagEl = gearLab.querySelector("[data-gear-tag]");
+
+    const presets = {
+      "50": {
+        name: "Standard Multi-Step Diffusion",
+        speed: "1× baseline · 50 NFE",
+        pct: "14%",
+        desc: "Iterative denoising over dozens of UNet/DiT evaluations delivers high quality at the cost of multi-second server latency.",
+        tag: "50 NFE · Slow"
+      },
+      "4": {
+        name: "Few-Step Mobile Distillation",
+        speed: "12.5× fewer steps",
+        pct: "66%",
+        desc: "Streamlined architectures and few-step distillation (MobileDiffusion, SnapGen, SnapGen-V) bring 1024px image & 5s video onto mobile devices.",
+        tag: "4 NFE · Mobile"
+      },
+      "1": {
+        name: "Second Gear: Single-Forward Diffusion-GAN",
+        speed: "50× fewer steps",
+        pct: "100%",
+        desc: "Distills iterative denoising into a single forward pass via Diffusion-GAN & adversarial training (UFOGen, SF-V), enabling subsecond on-device image and video synthesis.",
+        tag: "1 NFE · Instant"
+      }
+    };
+
+    for (const btn of gearButtons) {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.gear || "1";
+        const preset = presets[key];
+        if (!preset) return;
+        for (const other of gearButtons) {
+          other.setAttribute("aria-pressed", String(other === btn));
+        }
+        if (nameEl) nameEl.textContent = preset.name;
+        if (speedEl) speedEl.textContent = preset.speed;
+        if (fillEl) fillEl.style.setProperty("--gear-pct", preset.pct);
+        if (descEl) descEl.textContent = preset.desc;
+        if (visualEl) visualEl.dataset.gearVisual = key;
+        if (tagEl) tagEl.textContent = preset.tag;
+      });
+    }
+  }
 })();
